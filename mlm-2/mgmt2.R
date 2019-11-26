@@ -1,10 +1,11 @@
+library(here)
 library(dplyr)
 library(tidyr)
 library(stringr)
 library(purrr)
 
 #reading---------------------------------------
-mgmt <- read.csv("mgmt2.csv", header = T, stringsAsFactors = F)
+mgmt <- read.csv(here("mlm-2", "mgmt2.csv"), header = T, stringsAsFactors = F)
 #str(mgmt)
 #View(mgmt)
 
